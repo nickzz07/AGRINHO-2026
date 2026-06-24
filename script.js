@@ -70,6 +70,11 @@ const observar = new IntersectionObserver((entradas) => {
 
 elementos.forEach((elemento) => {
     observar.observe(elemento);
+});const botao = document.getElementById("botao");
+
+botao.addEventListener("click", () => {
+    document.getElementById("img1").classList.toggle("destaque");
+    document.getElementById("img2").classList.toggle("destaque");
 });
 
 });
